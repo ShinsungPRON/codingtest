@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문제 페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <p>학번: <span id="studentIdBox"></span> 이름: <span id="nameBox"></span> &nbsp&nbsp&nbsp&nbsp *인적사항에 오류가 있는경우 알려주세요.</p>
+    <h2 id="notice">*새로고침 하지 마세요*</h2>
+    <div id="timer">00:00:00</div>
+    <h2 id="questionTitle">문제 제목</h2>
+    <p id="questionDescription">문제 설명</p>
+    <textarea id="answerInput" placeholder="여기에 답변을 입력하세요."></textarea>
+    <button id="nextQuestionBtn">다음 문제</button>
+    <button id="previousQuestionBtn" style="display: none;">이전 문제</button>
+    <button id="submitBtn" style="display: none;">제출</button>
+    <p style="color: red">실수로 새로고침 하셨을 경우 아무 버튼도 누르지 말고 감독관을 불러주세요.</p>
+    <p>하루동안 급하게 만든 테스트 웹페이지다 보니 여러 문제가 있을 수 있습니다. 문제 발생시 주변 감독관에게 알려주세요.</p>
+    <h4>Copyright 2024. underconnor(정지원) all rights reserved.</h4>
+</div>
+<script src="test.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .red-text {
+      color: red;
+    }
+
+    .black-text {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+<h1>수고하셨습니다!</h1>
+<h2 class="red-text">브라우저를 종료하지 마시고,</h2>
+<h2 class="black-text">나가주시면 됩니다.</h2>
+<h3 style="color: #007bff"> 응시코드 : <span id="userCode"></span></h3>
+<br />
+<br />
+<p>제작: 정지원</p>
+<h4>Copyright 2024. underconnor all rights reserved.</h4>
+</body>
+<script>
+  // 로컬 저장소에서 userData 불러오기
+  document.addEventListener('DOMContentLoaded', function () {
+    const userData = JSON.parse(localStorage.getItem('userData'));
+    const userCodeSpan = document.getElementById('userCode');
+    if (userData) {
+      userCodeSpan.textContent = [userData.age,userData.name,userData.testType].join('');
+    }
+  });
+</script>
+</html>
